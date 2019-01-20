@@ -46,9 +46,7 @@ namespace GroupChatFuncs
 
             var message = new Message() { Content = input.Content };
             await messageTable.AddAsync(message.ToTableEntity());
-
             return new OkObjectResult(message);
-        
         }
 
 
